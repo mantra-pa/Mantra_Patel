@@ -219,44 +219,4 @@ footer {
   margin-top: 4rem;
 }
 
-/* =========================================================
-   DARK MODE (SYSTEM PREFERENCE)
-========================================================= */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-  }
 
-  section {
-    color: var(--text-light);
-  }
-
-  h1, h2, h3 {
-    color: #ffffff;
-  }
-
-  p {
-    color: #bcd0ff;
-  }
-
-  .project-card {
-    background-color: #020c1b;
-    border-color: #112240;
-  }
-
-  .button {
-    background-color: #112240;
-    color: #ffffff;
-    border-color: #233554;
-  }
-
-  .button:hover {
-    background-color: #233554;
-  }
-
-  footer {
-    border-color: #112240;
-    color: #8892b0;
-  }
-}
