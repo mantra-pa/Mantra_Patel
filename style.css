@@ -32,13 +32,15 @@ body {
 /* =========================================================
    NAVIGATION
 ========================================================= */
-nav {
+nav,
+.navbar {
   background-color: var(--primary);
   padding: 1rem 0;
   text-align: center;
 }
 
-nav a {
+nav a,
+.navbar a {
   color: #fff;
   margin: 0 1.2rem;
   text-decoration: none;
@@ -46,7 +48,8 @@ nav a {
   transition: color 0.25s ease;
 }
 
-nav a:hover {
+nav a,
+.navbar a :hover {
   color: var(--accent);
 }
 
