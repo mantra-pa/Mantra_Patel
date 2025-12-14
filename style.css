@@ -1,5 +1,5 @@
 /* =========================================================
-   GLOBAL RESET & VARIABLES
+   GLOBAL RESET & VARIABLES (LIGHT THEME ONLY)
 ========================================================= */
 * {
   margin: 0;
@@ -8,13 +8,12 @@
 }
 
 :root {
-  --primary: #0a192f;
-  --accent: #64ffda;
-  --bg-light: #f9fafb;
-  --bg-dark: #020c1b;
-  --text-dark: #333;
-  --text-light: #ccd6f6;
+  --primary: #1f2937;        /* neutral dark gray (not navy) */
+  --accent: #2563eb;         /* subtle blue accent */
+  --bg-main: #f9fafb;        /* clean off-white */
   --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #4b5563;
   --border-light: #e5e7eb;
 }
 
@@ -23,8 +22,8 @@
 ========================================================= */
 body {
   font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
+  background-color: var(--bg-main);
+  color: var(--text-main);
   line-height: 1.65;
   scroll-behavior: smooth;
 }
@@ -34,22 +33,23 @@ body {
 ========================================================= */
 nav,
 .navbar {
-  background-color: var(--primary);
-  padding: 1rem 0;
+  background-color: #ffffff;
+  padding: 1.1rem 0;
   text-align: center;
+  border-bottom: 1px solid var(--border-light);
 }
 
 nav a,
 .navbar a {
-  color: #fff;
+  color: var(--text-main);
   margin: 0 1.2rem;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.25s ease;
+  transition: color 0.2s ease;
 }
 
-nav a,
-.navbar a :hover {
+nav a:hover,
+.navbar a:hover {
   color: var(--accent);
 }
 
@@ -62,29 +62,13 @@ section {
   padding: 0 1.2rem;
 }
 
-.section-light {
-  background-color: var(--bg-light);
-}
-
-.section-dark {
-  background-color: var(--primary);
-  color: var(--text-light);
-  padding: 4rem 1.2rem;
-}
-
 /* =========================================================
    TYPOGRAPHY
 ========================================================= */
 h1, h2, h3 {
-  color: var(--primary);
+  color: var(--text-main);
   margin-bottom: 0.6rem;
   font-weight: 600;
-}
-
-.section-dark h1,
-.section-dark h2,
-.section-dark h3 {
-  color: #ffffff;
 }
 
 h1 {
@@ -96,20 +80,17 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 p {
   margin-bottom: 1rem;
-  color: #444;
-}
-
-.section-dark p {
-  color: #bcd0ff;
+  color: var(--text-muted);
+  max-width: 75ch;
 }
 
 /* =========================================================
-   BUTTONS (Quick Links ready)
+   BUTTONS (Quick Links)
 ========================================================= */
 .button {
   display: inline-block;
@@ -118,24 +99,24 @@ p {
   text-decoration: none;
   font-weight: 500;
   background-color: #f3f4f6;
-  color: #111;
-  transition: all 0.25s ease;
+  color: var(--text-main);
+  transition: all 0.2s ease;
   border: 1px solid var(--border-light);
 }
 
 .button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   background-color: #e5e7eb;
 }
 
 .button.primary {
-  background-color: var(--primary);
+  background-color: var(--accent);
   color: #ffffff;
   border: none;
 }
 
 .button.primary:hover {
-  background-color: #020c1b;
+  background-color: #1d4ed8;
 }
 
 /* =========================================================
@@ -144,7 +125,7 @@ p {
 .links-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.3rem;
+  gap: 1.4rem;
   margin-top: 2rem;
 }
 
@@ -161,14 +142,14 @@ p {
 .project-card {
   background-color: var(--card-bg);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.6rem;
   border: 1px solid var(--border-light);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
 }
 
 .project-card h3 {
@@ -186,18 +167,19 @@ img,
 video {
   width: 100%;
   max-width: 720px;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-top: 1rem;
   display: block;
+  border: 1px solid var(--border-light);
 }
 
 /* =========================================================
-   SCROLL ANIMATION (SUBTLE)
+   SUBTLE SCROLL ANIMATION
 ========================================================= */
 .fade-in {
   opacity: 0;
-  transform: translateY(25px);
-  animation: fadeUp 0.8s ease forwards;
+  transform: translateY(20px);
+  animation: fadeUp 0.7s ease forwards;
 }
 
 @keyframes fadeUp {
@@ -213,10 +195,8 @@ video {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  color: #777;
+  color: var(--text-muted);
   font-size: 0.9rem;
   border-top: 1px solid var(--border-light);
   margin-top: 4rem;
 }
-
-
