@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroThon 2024 | Mantra Patel</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>AeroThon 2024</h1>
+  <p class="subtitle">
+    Disaster-response UAV design competition organized by SAE India
+  </p>
+</header>
+
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../competitions.html">Competitions</a>
+</nav>
+
+<section class="section">
+  <h2>Competition Overview</h2>
+  <p>
+    AeroThon is a national aerospace design competition organized by SAE India,
+    focused on UAV solutions for disaster-struck environments. The competition
+    emphasizes rapid manufacturing, robustness, and real-world deployability.
+  </p>
+</section>
+
+<section class="section section-light">
+  <h2>My Role & Leadership</h2>
+  <p>
+    I served as Captain and Mechanical Lead, leading the end-to-end mechanical
+    design and manufacturing strategy of the UAV. The project required balancing
+    performance with manufacturability and rapid production.
+  </p>
+
+  <ul>
+    <li>Owned overall mechanical architecture and structural design</li>
+    <li>Defined manufacturing methods and material selection</li>
+    <li>Designed modular, crash-resistant structures for rapid repair</li>
+    <li>Integrated design-for-manufacturing principles to reduce build time</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Results & Recognition</h2>
+  <p>
+    The team secured <strong>1st Place overall</strong> and received the
+    <strong>Best Business Proposal</strong> award, recognizing both technical
+    execution and system-level feasibility.
+  </p>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Mantra Patel</p>
+</footer>
+
+</body>
+</html>
