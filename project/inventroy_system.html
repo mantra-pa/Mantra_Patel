@@ -13,7 +13,7 @@
 <header class="header">
   <h1>Digital Inventory & Procurement Management System</h1>
   <p class="subtitle">
-    System-level design for manufacturing operations and supply reliability
+    Decision-driven procurement for manufacturing operations
   </p>
 </header>
 
@@ -27,122 +27,77 @@
   <a href="../contact.html">Contact</a>
 </nav>
 
-<!-- ================= PROBLEM CONTEXT ================= -->
+<!-- ================= CONTEXT ================= -->
 <section class="section">
   <h2>Problem Context</h2>
   <p>
-    In small manufacturing environments, inventory and procurement processes are
-    often managed manually through phone calls, spreadsheets, and informal vendor
-    coordination. This approach leads to delayed replenishment, production downtime,
-    limited demand visibility, and heavy dependence on human intervention.
+    In small manufacturing environments, inventory and procurement decisions are
+    often reactive and manually driven, relying on continuous vendor follow-ups.
+    This leads to higher procurement costs, delayed replenishment, and increased
+    risk of production downtime.
   </p>
 </section>
 
-<!-- ================= OBJECTIVES ================= -->
+<!-- ================= OBJECTIVE ================= -->
 <section class="section section-light">
-  <h2>System Objectives</h2>
-  <ul>
-    <li>Enable real-time visibility of inventory levels</li>
-    <li>Reduce production interruptions caused by stock-outs</li>
-    <li>Support proactive and repeatable procurement decisions</li>
-    <li>Minimize manual vendor follow-ups</li>
-    <li>Introduce data-driven planning into daily operations</li>
-  </ul>
+  <h2>Project Objective</h2>
+  <p>
+    The objective of this project was to design a system-level workflow that
+    integrates inventory tracking, demand estimation, and market-aware procurement
+    timing to reduce costs while ensuring uninterrupted manufacturing.
+  </p>
 </section>
 
-<!-- ================= SYSTEM ARCHITECTURE ================= -->
+<!-- ================= SYSTEM FLOW ================= -->
 <section class="section">
-  <h2>System Architecture</h2>
+  <h2>System Flow & Decision Logic</h2>
   <p>
-    The system was designed as a centralized digital workflow integrating inventory
-    tracking, sales logging, demand analysis, and procurement decision logic.
-    Every transaction updates the inventory state, enabling continuous monitoring
-    and informed decision-making.
+    When a production order is placed, the system generates the bill of materials
+    (BOM) and checks current inventory availability. Required quantities are
+    calculated, and demand is estimated using an EOQ-based approach.
   </p>
 
-  <ul>
-    <li>Inventory database with item-level tracking</li>
-    <li>Sales and dispatch logging module</li>
-    <li>Demand trend analysis component</li>
-    <li>Reorder decision logic with threshold-based rules</li>
-    <li>Vendor database with lead-time parameters</li>
-  </ul>
+  <p>
+    Market prices are forecasted in parallel, and procurement costs are evaluated
+    for both immediate purchasing and forecasted price conditions. If forecasted
+    procurement costs are lower, required inventory is locked for baseline
+    manufacturing while procurement is delayed.
+  </p>
+
+  <p>
+    Once favorable market conditions are achieved, the procurement order is
+    automatically triggered. Safety stock levels are calculated using distributor
+    network variability, and projected future pump prices are displayed to support
+    distributor-side ordering decisions.
+  </p>
 </section>
 
-<!-- ================= SYSTEM FLOW DIAGRAM ================= -->
+<!-- ================= WHY IT MATTERS ================= -->
 <section class="section section-light">
-  <h2>System Flow Diagram</h2>
-
+  <h2>Why This Matters</h2>
   <p>
-    The block diagram below illustrates the information flow and decision logic
-    within the inventory and procurement management system, from sales data
-    ingestion to procurement action.
-  </p>
-
-  <figure>
-    <img src="../assets/images/inventory_flow.png"
-         alt="Block diagram showing inventory and procurement system flow"
-         style="max-width: 100%; height: auto;">
-    <figcaption>
-      Figure: High-level system flow illustrating inventory updates, demand analysis,
-      reorder decision logic, and vendor-based procurement actions.
-    </figcaption>
-  </figure>
-</section>
-
-<!-- ================= PROCUREMENT LOGIC ================= -->
-<section class="section">
-  <h2>Procurement Decision Logic</h2>
-  <p>
-    Procurement decisions were driven by a rule-based logic combining current
-    inventory levels, historical consumption rates, safety stock requirements,
-    and vendor lead times.
-  </p>
-
-  <ul>
-    <li>Dynamic reorder point calculation</li>
-    <li>Lead-time-aware replenishment scheduling</li>
-    <li>Demand trend monitoring for early risk detection</li>
-    <li>Safety stock buffers for critical components</li>
-  </ul>
-</section>
-
-<!-- ================= IMPLEMENTATION & VALIDATION ================= -->
-<section class="section section-light">
-  <h2>Implementation & Validation</h2>
-  <p>
-    The system logic was validated using historical inventory and sales data to
-    simulate normal and peak-demand scenarios. Stock-out conditions were modeled
-    to evaluate system response time and reorder accuracy compared to manual
-    procurement practices.
+    In manufacturing systems, procurement timing often has a greater impact on
+    operational cost and reliability than inventory size alone. This project
+    demonstrates how integrating demand estimation, market forecasting, and
+    decision logic can reduce procurement costs without increasing inventory
+    holding or risking production continuity.
   </p>
 
   <p>
-    Performance metrics such as stock availability, response latency, and reorder
-    reliability were monitored to assess effectiveness.
+    The system illustrates how data-driven decision-making can replace reactive
+    vendor coordination, improving supply resilience and operational robustness.
   </p>
-</section>
-
-<!-- ================= OUTCOMES ================= -->
-<section class="section">
-  <h2>Outcomes & Impact</h2>
-  <ul>
-    <li>Improved visibility of inventory status across operations</li>
-    <li>Reduced reliance on continuous vendor communication</li>
-    <li>Lower probability of unexpected production stoppages</li>
-    <li>More structured and repeatable procurement workflows</li>
-  </ul>
 </section>
 
 <!-- ================= KEY LEARNINGS ================= -->
-<section class="section section-light">
+<section class="section">
   <h2>Key Learnings</h2>
-  <p>
-    This project demonstrated how system-level thinking and decision logic can
-    significantly improve manufacturing operations without altering physical
-    infrastructure. It reinforced the importance of integrating data flow,
-    operational constraints, and engineering judgment into robust system design.
-  </p>
+  <ul>
+    <li>System-level thinking is critical for manufacturing operations</li>
+    <li>Procurement timing is as important as inventory quantity</li>
+    <li>Market awareness can be integrated into engineering decision logic</li>
+    <li>Data-driven workflows reduce dependency on manual coordination</li>
+  </ul>
 </section>
 
 <!-- ================= FOOTER ================= -->
