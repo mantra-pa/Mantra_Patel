@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory & Procurement Management System | Mantra Patel</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <h1>Digital Inventory & Procurement Management System</h1>
+  <p class="subtitle">
+    System-level design for manufacturing operations and supply reliability
+  </p>
+</header>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../projects.html">Projects</a>
+  <a href="../competitions.html">Competitions</a>
+  <a href="../research.html">Research</a>
+  <a href="../skills.html">Skills</a>
+  <a href="../contact.html">Contact</a>
+</nav>
+
+<!-- ================= PROBLEM CONTEXT ================= -->
+<section class="section">
+  <h2>Problem Context</h2>
+  <p>
+    In small manufacturing environments, inventory and procurement processes are
+    often managed manually through phone calls, spreadsheets, and informal vendor
+    coordination. This approach leads to delayed replenishment, production downtime,
+    limited demand visibility, and heavy dependence on human intervention.
+  </p>
+</section>
+
+<!-- ================= OBJECTIVES ================= -->
+<section class="section section-light">
+  <h2>System Objectives</h2>
+  <ul>
+    <li>Enable real-time visibility of inventory levels</li>
+    <li>Reduce production interruptions caused by stock-outs</li>
+    <li>Support proactive and repeatable procurement decisions</li>
+    <li>Minimize manual vendor follow-ups</li>
+    <li>Introduce data-driven planning into daily operations</li>
+  </ul>
+</section>
+
+<!-- ================= SYSTEM ARCHITECTURE ================= -->
+<section class="section">
+  <h2>System Architecture</h2>
+  <p>
+    The system was designed as a centralized digital workflow integrating inventory
+    tracking, sales logging, demand analysis, and procurement decision logic.
+    Every transaction updates the inventory state, enabling continuous monitoring
+    and informed decision-making.
+  </p>
+
+  <ul>
+    <li>Inventory database with item-level tracking</li>
+    <li>Sales and dispatch logging module</li>
+    <li>Demand trend analysis component</li>
+    <li>Reorder decision logic with threshold-based rules</li>
+    <li>Vendor database with lead-time parameters</li>
+  </ul>
+</section>
+
+<!-- ================= SYSTEM FLOW DIAGRAM ================= -->
+<section class="section section-light">
+  <h2>System Flow Diagram</h2>
+
+  <p>
+    The block diagram below illustrates the information flow and decision logic
+    within the inventory and procurement management system, from sales data
+    ingestion to procurement action.
+  </p>
+
+  <figure>
+    <img src="../assets/images/inventory_flow.png"
+         alt="Block diagram showing inventory and procurement system flow"
+         style="max-width: 100%; height: auto;">
+    <figcaption>
+      Figure: High-level system flow illustrating inventory updates, demand analysis,
+      reorder decision logic, and vendor-based procurement actions.
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ================= PROCUREMENT LOGIC ================= -->
+<section class="section">
+  <h2>Procurement Decision Logic</h2>
+  <p>
+    Procurement decisions were driven by a rule-based logic combining current
+    inventory levels, historical consumption rates, safety stock requirements,
+    and vendor lead times.
+  </p>
+
+  <ul>
+    <li>Dynamic reorder point calculation</li>
+    <li>Lead-time-aware replenishment scheduling</li>
+    <li>Demand trend monitoring for early risk detection</li>
+    <li>Safety stock buffers for critical components</li>
+  </ul>
+</section>
+
+<!-- ================= IMPLEMENTATION & VALIDATION ================= -->
+<section class="section section-light">
+  <h2>Implementation & Validation</h2>
+  <p>
+    The system logic was validated using historical inventory and sales data to
+    simulate normal and peak-demand scenarios. Stock-out conditions were modeled
+    to evaluate system response time and reorder accuracy compared to manual
+    procurement practices.
+  </p>
+
+  <p>
+    Performance metrics such as stock availability, response latency, and reorder
+    reliability were monitored to assess effectiveness.
+  </p>
+</section>
+
+<!-- ================= OUTCOMES ================= -->
+<section class="section">
+  <h2>Outcomes & Impact</h2>
+  <ul>
+    <li>Improved visibility of inventory status across operations</li>
+    <li>Reduced reliance on continuous vendor communication</li>
+    <li>Lower probability of unexpected production stoppages</li>
+    <li>More structured and repeatable procurement workflows</li>
+  </ul>
+</section>
+
+<!-- ================= KEY LEARNINGS ================= -->
+<section class="section section-light">
+  <h2>Key Learnings</h2>
+  <p>
+    This project demonstrated how system-level thinking and decision logic can
+    significantly improve manufacturing operations without altering physical
+    infrastructure. It reinforced the importance of integrating data flow,
+    operational constraints, and engineering judgment into robust system design.
+  </p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2025 Mantra Patel</p>
+</footer>
+
+</body>
+</html>
