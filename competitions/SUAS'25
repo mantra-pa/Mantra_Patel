@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboNation SUAS 2025 | Mantra Patel</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>RoboNation SUAS 2025</h1>
+  <p class="subtitle">
+    International autonomous UAV competition focused on reliability and manufacturability
+  </p>
+</header>
+
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../competitions.html">Competitions</a>
+</nav>
+
+<section class="section">
+  <h2>Competition Overview</h2>
+  <p>
+    RoboNation SUAS is an international UAV competition that evaluates teams on
+    autonomous mission performance, system integration, and reliability under
+    operational constraints. Teams must design, fabricate, and deploy UAVs capable
+    of repeated missions with minimal downtime.
+  </p>
+</section>
+
+<section class="section section-light">
+  <h2>My Role & Responsibilities</h2>
+  <p>
+    I served as Vice-Captain and Mechanical Lead, with primary responsibility for
+    manufacturing strategy and structural design decisions. My focus was on ensuring
+    that the UAV could be transported, assembled, repaired, and redeployed efficiently
+    during competition operations.
+  </p>
+
+  <ul>
+    <li>Defined manufacturing workflows and build sequencing</li>
+    <li>Led composite material fabrication and structural integration</li>
+    <li>Designed modular interfaces to enable rapid subsystem replacement</li>
+    <li>Coordinated assembly planning and logistics for field deployment</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Manufacturing & Operational Focus</h2>
+  <p>
+    Design decisions were driven by transport constraints, repeated assembly cycles,
+    and the need for rapid turnaround between missions. Emphasis was placed on
+    manufacturability, tolerance robustness, and minimizing failure points during
+    field operations.
+  </p>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Mantra Patel</p>
+</footer>
+
+</body>
+</html>
