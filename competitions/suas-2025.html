@@ -3,138 +3,510 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RoboNation SUAS 2025 - Vice-Captain & Mechanical Lead role in international autonomous UAV competition.">
   <title>RoboNation SUAS 2025 | Mantra Patel</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- Header -->
 <header class="header">
-  <h1>RoboNation SUAS 2025</h1>
-  <p class="subtitle">
-    International autonomous UAV competition focused on reliability,
-    rapid deployment, and manufacturability
-  </p>
+  <div class="header-content">
+    <h1>RoboNation SUAS 2025</h1>
+    <p class="subtitle">International Autonomous UAV Competition | Reliability & Rapid Deployment</p>
+  </div>
 </header>
 
-<!-- ================= NAVBAR ================= -->
+<!-- Navigation -->
 <nav class="navbar">
-  <a href="../index.html">Home</a>
-  <a href="../projects.html">Projects</a>
-  <a href="../competitions.html">Competitions</a>
-  <a href="../research.html">Research</a>
-  <a href="../skills.html">Skills</a>
-  <a href="../contact.html">Contact</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+    ☰
+  </button>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="nav-content" id="navContent">
+    <a href="../index.html">Home</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../competitions.html" class="active">Competitions</a>
+    <a href="../research.html">Research</a>
+    <a href="../skills.html">Skills</a>
+    <a href="../contact.html">Contact</a>
+  </div>
 </nav>
 
-<!-- ================= OVERVIEW ================= -->
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="breadcrumb-content">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <a href="../competitions.html">Competitions</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">SUAS 2025</span>
+  </div>
+</div>
+
+<!-- Competition Banner -->
 <section class="section">
-  <h2>Competition Overview</h2>
-  <p>
-    RoboNation SUAS is an international UAV competition that evaluates teams on
-    autonomous mission execution, system integration, and operational reliability
-    across repeated mission cycles under real-world constraints.
-  </p>
-</section>
-
-<!-- ================= ROLE ================= -->
-<section class="section section-light">
-  <h2>My Role & Responsibilities</h2>
-  <p>
-    I served as <strong>Vice-Captain and Mechanical Lead</strong>, with responsibility
-    for manufacturing strategy, structural design, and field-operational readiness.
-    My primary objective was to ensure the UAV could be transported, assembled,
-    repaired, and redeployed efficiently during competition operations.
-  </p>
-
-  <ul>
-    <li>Defined manufacturing workflows and build sequencing</li>
-    <li>Led composite fabrication and structural integration</li>
-    <li>Designed modular interfaces for rapid subsystem replacement</li>
-    <li>Planned assembly, transport, and field-deployment logistics</li>
-  </ul>
-</section>
-
-<!-- ================= KEY ACHIEVEMENT ================= -->
-<section class="section highlight">
-  <h2>Key Operational Achievement</h2>
-  <p>
-    The UAV was engineered for <strong>rapid field deployment</strong>, achieving
-    a <strong>complete structural assembly time of under 5 minutes</strong>.
-    This capability was enabled through a modular carbon-fiber rod architecture,
-    reduced fastener count, and simplified mechanical interfaces.
-  </p>
-</section>
-
-<!-- ================= MANUFACTURING FOCUS ================= -->
-<section class="section">
-  <h2>Manufacturing & Operations Focus</h2>
-  <p>
-    Design decisions were driven by transport constraints, repeated assembly cycles,
-    and short turnaround times between missions. Emphasis was placed on
-    design-for-manufacturing (DFM), design-for-assembly (DFA),
-    tolerance robustness, and minimizing operational failure points.
-  </p>
-
-  <ul>
-    <li>Modular structure to enable sub-5-minute assembly</li>
-    <li>Reduced joint count to minimize vibration and loosening</li>
-    <li>Structural layouts optimized for repeated disassembly</li>
-    <li>Manufacturing methods chosen for fast iteration and repairability</li>
-  </ul>
-</section>
-
-<!-- ================= CAD DESIGN ================= -->
-<section class="section section-light">
-  <h2>CAD Design & Structural Layout</h2>
-  <p>
-    The UAV was fully designed in CAD with emphasis on load paths,
-    manufacturability, and interface standardization.
-    Structural joints and mounting interfaces were optimized
-    to reduce part count and simplify assembly.
-  </p>
-
-  <div class="gallery">
-    <img src="../images/suas25/cad/cad1.jpg" alt="UAV CAD Assembly">
-    <img src="../images/suas25/cad/cad2.jpg" alt="Structural CAD Layout">
-    <img src="../images/suas25/cad/cad3.jpg" alt="Motor Mount CAD">
+  <div class="container">
+    <div class="callout callout-info">
+      <p style="font-size: 1.3rem;"><strong>🚀 2025 | Ongoing Competition</strong></p>
+      <p style="margin-top: 1rem;">RoboNation Student Unmanned Aerial Systems Competition</p>
+    </div>
   </div>
 </section>
 
-<!-- ================= CARBON FIBER ================= -->
-<section class="section">
-  <h2>Carbon Fiber Manufacturing</h2>
-  <p>
-    Carbon-fiber composites were used for the primary structure and aerodynamic canopy
-    to achieve a high stiffness-to-weight ratio while enabling rapid fabrication
-    and on-site repair.
-  </p>
+<!-- Competition Overview -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Competition Overview</h2>
+    <p class="section-intro">
+      RoboNation SUAS is an international UAV competition that evaluates teams on autonomous mission execution, system integration, and operational reliability across repeated mission cycles under real-world constraints. The competition emphasizes field-deployable systems capable of repeated autonomous operations.
+    </p>
 
-  <ul>
-    <li>Material: Carbon fiber composite</li>
-    <li>Components: Structural rods and aerodynamic canopy</li>
-    <li>Process: Hand layup with mold-based curing</li>
-    <li>Focus: Lightweight, structural rigidity, and fast turnaround</li>
-  </ul>
-
-  <div class="gallery">
-    <img src="../images/suas25/carbon_fiber/rod.jpg" alt="Carbon Fiber Rod Manufacturing">
-    <img src="../images/suas25/carbon_fiber/canopy.jpg" alt="Carbon Fiber Canopy Manufacturing">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">&lt;5 min</div>
+        <div class="stat-label">Assembly Time</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">International</div>
+        <div class="stat-label">Competition</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Modular</div>
+        <div class="stat-label">Architecture</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Carbon Fiber</div>
+        <div class="stat-label">Primary Structure</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ================= FINAL UAV ================= -->
-<section class="section section-light">
-  <h2>Final UAV & Field Operations</h2>
-  <p>
-    The final UAV configuration was validated through repeated ground testing
-    and field trials, with emphasis on structural reliability,
-    vibration behavior, and maintenance efficiency.
-  </p>
+<!-- My Role -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">My Role & Responsibilities</h2>
+    <p class="section-intro">
+      I serve as <strong>Vice-Captain and Mechanical Lead</strong>, with responsibility for manufacturing strategy, structural design, and field-operational readiness. My primary objective is to ensure the UAV can be transported, assembled, repaired, and redeployed efficiently during competition operations.
+    </p>
 
-  <div class="gallery">
-    <img src="../images/suas25/drone/drone1.jpg" alt="Final UAV Assembly">
-    <img src="../images/suas25/drone/drone2.jpg" alt="UAV Field Testing">
-    <img src="../images/suas25/drone/drone3.jpg" alt="UAV at Com
+    <div class="about-grid">
+      <div class="about-card">
+        <h3><span class="icon">👥</span> Team Leadership</h3>
+        <p>
+          Vice-Captain role coordinating team activities, strategic planning, and cross-functional collaboration.
+        </p>
+      </div>
 
+      <div class="about-card">
+        <h3><span class="icon">🔧</span> Mechanical Lead</h3>
+        <p>
+          Complete ownership of structural design, manufacturing workflows, and mechanical system integration.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">⚡</span> Rapid Deployment</h3>
+        <p>
+          Designed for sub-5-minute field assembly enabling quick deployment and mission turnaround.
+        </p>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 3rem;">Key Responsibilities:</h3>
+    <ul class="highlights">
+      <li>
+        <strong>Manufacturing Workflow Design</strong>
+        <p>Defined complete fabrication processes, build sequencing, and quality control procedures.</p>
+      </li>
+      <li>
+        <strong>Composite Fabrication Leadership</strong>
+        <p>Led carbon fiber layup, curing processes, and structural component manufacturing.</p>
+      </li>
+      <li>
+        <strong>Modular Interface Design</strong>
+        <p>Designed standardized connections enabling rapid subsystem replacement and field maintenance.</p>
+      </li>
+      <li>
+        <strong>Assembly & Logistics Planning</strong>
+        <p>Planned transport packaging, assembly procedures, and field deployment workflows.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Key Achievement -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="callout callout-success">
+      <h2 style="color: var(--primary); margin-bottom: 1rem;">Key Operational Achievement</h2>
+      <p style="font-size: 1.2rem; color: var(--text);">
+        The UAV was engineered for <strong>rapid field deployment</strong>, achieving a <strong>complete structural assembly time of under 5 minutes</strong>. This capability was enabled through a modular carbon-fiber rod architecture, reduced fastener count, and simplified mechanical interfaces.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Manufacturing Focus -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Manufacturing & Operations Focus</h2>
+    <p class="section-intro">
+      Design decisions were driven by transport constraints, repeated assembly cycles, and short turnaround times between missions. Emphasis was placed on design-for-manufacturing (DFM), design-for-assembly (DFA), tolerance robustness, and minimizing operational failure points.
+    </p>
+
+    <div class="research-topics">
+      <div class="research-topic">
+        <h4>Modular Structure</h4>
+        <p>Carbon fiber rod architecture enabling sub-5-minute field assembly without specialized tools.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Reduced Joint Count</h4>
+        <p>Minimized fasteners and connection points to reduce vibration, loosening, and assembly complexity.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Repeated Disassembly</h4>
+        <p>Structural layouts optimized for frequent assembly-disassembly cycles without degradation.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Fast Iteration</h4>
+        <p>Manufacturing methods chosen for rapid turnaround enabling quick design improvements.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Field Repairability</h4>
+        <p>Component-level modularity allowing on-site repairs with minimal tools and time.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Transport Optimization</h4>
+        <p>Compact breakdown configuration for efficient transport and storage between test sessions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAD Design -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">CAD Design & Structural Layout</h2>
+    <p class="section-intro">
+      The UAV was fully designed in CAD with emphasis on load paths, manufacturability, and interface standardization. Structural joints and mounting interfaces were optimized to reduce part count and simplify assembly.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3><span class="icon">📐</span> Load Path Optimization</h3>
+        <p>
+          Structural members sized and positioned to efficiently transfer loads while minimizing weight.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🔗</span> Standardized Interfaces</h3>
+        <p>
+          Common connection types throughout design reducing part variety and simplifying assembly.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">⚙️</span> DFM Integration</h3>
+        <p>
+          Manufacturing constraints incorporated early in CAD phase ensuring producibility.
+        </p>
+      </div>
+    </div>
+
+    <div class="image-gallery">
+      <img src="../images/suas25/cad/cad1.jpg" alt="UAV CAD Assembly" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="../images/suas25/cad/cad2.jpg" alt="Structural CAD Layout" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="../images/suas25/cad/cad3.jpg" alt="Motor Mount CAD" style="width: 100%; height: 250px; object-fit: cover;">
+    </div>
+  </div>
+</section>
+
+<!-- Carbon Fiber Manufacturing -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Carbon Fiber Manufacturing</h2>
+    <p class="section-intro">
+      Carbon-fiber composites were used for the primary structure and aerodynamic canopy to achieve a high stiffness-to-weight ratio while enabling rapid fabrication and on-site repair.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Material Selection</div>
+        <div class="timeline-content">
+          <h4>Carbon Fiber Composite</h4>
+          <p>Selected for optimal strength-to-weight ratio, stiffness, and manufacturing feasibility.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Components</div>
+        <div class="timeline-content">
+          <h4>Structural Rods & Canopy</h4>
+          <p>Primary load-bearing rods and aerodynamic canopy fabricated using carbon fiber layup.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Process</div>
+        <div class="timeline-content">
+          <h4>Hand Layup with Mold-Based Curing</h4>
+          <p>Wet layup process using precision molds for dimensional accuracy and surface finish.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Focus</div>
+        <div class="timeline-content">
+          <h4>Lightweight & Fast Turnaround</h4>
+          <p>Process optimized for structural rigidity while maintaining rapid production capability.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 3rem;">Manufacturing Process:</h3>
+    <ul class="highlights">
+      <li>
+        <strong>Structural Rods</strong>
+        <p>Carbon fiber tubes providing high-stiffness primary structure with minimal weight penalty.</p>
+      </li>
+      <li>
+        <strong>Aerodynamic Canopy</strong>
+        <p>Molded carbon fiber shell protecting electronics while maintaining aerodynamic performance.</p>
+      </li>
+      <li>
+        <strong>Hand Layup Process</strong>
+        <p>Controlled fiber orientation and resin content for optimal mechanical properties.</p>
+      </li>
+      <li>
+        <strong>Quality Control</strong>
+        <p>Dimensional verification and non-destructive testing ensuring consistent component quality.</p>
+      </li>
+    </ul>
+
+    <div class="image-gallery">
+      <img src="../images/suas25/carbon_fiber/rod.jpg" alt="Carbon Fiber Rod Manufacturing" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="../images/suas25/carbon_fiber/canopy.jpg" alt="Carbon Fiber Canopy Manufacturing" style="width: 100%; height: 250px; object-fit: cover;">
+    </div>
+  </div>
+</section>
+
+<!-- Final UAV -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Final UAV & Field Operations</h2>
+    <p class="section-intro">
+      The final UAV configuration was validated through repeated ground testing and field trials, with emphasis on structural reliability, vibration behavior, and maintenance efficiency.
+    </p>
+
+    <div class="research-topics">
+      <div class="research-topic">
+        <h4>Ground Testing</h4>
+        <p>Comprehensive structural and systems testing before flight operations to validate design decisions.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Vibration Analysis</h4>
+        <p>Monitoring and mitigation of structural vibrations affecting sensor and avionics performance.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Field Trials</h4>
+        <p>Real-world testing under operational conditions validating rapid assembly and deployment procedures.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Maintenance Efficiency</h4>
+        <p>Documented maintenance procedures enabling quick component replacement and system checks.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Performance Validation</h4>
+        <p>Flight testing confirming structural integrity, system integration, and mission capability.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Operational Readiness</h4>
+        <p>Complete system ready for competition deployment with proven reliability and field support.</p>
+      </div>
+    </div>
+
+    <div class="image-gallery">
+      <img src="../images/suas25/drone/drone1.jpg" alt="Final UAV Assembly" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="../images/suas25/drone/drone2.jpg" alt="UAV Field Testing" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="../images/suas25/drone/drone3.jpg" alt="UAV at Competition" style="width: 100%; height: 250px; object-fit: cover;">
+    </div>
+  </div>
+</section>
+
+<!-- Technical Innovations -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Technical Innovations</h2>
+    
+    <div class="about-grid">
+      <div class="about-card">
+        <h3><span class="icon">🚀</span> Rapid Assembly</h3>
+        <p>
+          Sub-5-minute assembly time achieved through modular architecture and simplified connections.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🏗️</span> Modular Construction</h3>
+        <p>
+          Standardized interfaces enabling component swapping and configuration changes in the field.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">💪</span> Structural Efficiency</h3>
+        <p>
+          Carbon fiber construction providing exceptional strength-to-weight ratio for extended range.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🔄</span> Design Iteration</h3>
+        <p>
+          Manufacturing process enabling rapid design changes and testing cycles.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🛠️</span> Field Maintenance</h3>
+        <p>
+          Component-level modularity allowing repairs without specialized tools or facilities.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">📦</span> Transport Optimization</h3>
+        <p>
+          Compact breakdown enabling efficient transport in standard luggage for travel logistics.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Status -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Current Status & Next Steps</h2>
+    
+    <div class="research-content">
+      <p>
+        The SUAS 2025 project is currently in final preparation phase for international competition. The UAV platform has completed structural validation, system integration testing, and field trials. The team is focused on final optimization, mission-specific testing, and operational readiness preparation.
+      </p>
+
+      <h3 style="margin-top: 3rem;">Remaining Milestones:</h3>
+      <div class="timeline" style="margin-top: 2rem;">
+        <div class="timeline-item">
+          <div class="timeline-date">Current Phase</div>
+          <div class="timeline-content">
+            <h4>Final Optimization</h4>
+            <p>System tuning, performance optimization, and mission-specific testing.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Next Phase</div>
+          <div class="timeline-content">
+            <h4>Competition Preparation</h4>
+            <p>Documentation completion, team training, and logistics planning.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Final Phase</div>
+          <div class="timeline-content">
+            <h4>Competition Deployment</h4>
+            <p>Field operations, autonomous missions, and system demonstrations at international competition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back Navigation -->
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <a class="button" href="../competitions.html">← Back to Competitions</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Mantra Patel | Mechanical Engineering Portfolio</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../competitions.html">Competitions</a>
+      <a href="../research.html">Research</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navContent = document.getElementById('navContent');
+  const navOverlay = document.getElementById('navOverlay');
+  const body = document.body;
+
+  function toggleMenu() {
+    navContent.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    body.style.overflow = navContent.classList.contains('active') ? 'hidden' : '';
+    const isExpanded = navContent.classList.contains('active');
+    menuToggle.setAttribute('aria-expanded', isExpanded);
+  }
+
+  function closeMenu() {
+    navContent.classList.remove('active');
+    navOverlay.classList.remove('active');
+    body.style.overflow = '';
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  menuToggle.addEventListener('click', toggleMenu);
+  navOverlay.addEventListener('click', closeMenu);
+
+  const navLinks = navContent.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navContent.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth > 768) {
+        closeMenu();
+      }
+    }, 250);
+  });
+
+  menuToggle.setAttribute('aria-expanded', 'false');
+</script>
+
+</body>
+</html>

@@ -3,156 +3,337 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Low-cost modular UAV platform for rapid experimentation and manufacturing-aware design by Mantra Patel.">
   <title>Low-Cost Modular UAV Platform | Mantra Patel</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="header" style="text-align:center; padding:3rem 1rem 2rem;">
-  <h1>Low-Cost Modular UAV Platform</h1>
-  <p class="subtitle">
-    Rapid experimentation through manufacturing-aware design
-  </p>
+<!-- Header -->
+<header class="header">
+  <div class="header-content">
+    <h1>Low-Cost Modular UAV Platform</h1>
+    <p class="subtitle">Rapid Experimentation Through Manufacturing-Aware Design</p>
+  </div>
 </header>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- Navigation -->
 <nav class="navbar">
-  <a href="../index.html">Home</a>
-  <a href="../projects.html">Projects</a>
-  <a href="../competitions.html">Competitions</a>
-  <a href="../research.html">Research</a>
-  <a href="../skills.html">Skills</a>
-  <a href="../contact.html">Contact</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+    ☰
+  </button>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="nav-content" id="navContent">
+    <a href="../index.html">Home</a>
+    <a href="../projects.html" class="active">Projects</a>
+    <a href="../competitions.html">Competitions</a>
+    <a href="../research.html">Research</a>
+    <a href="../skills.html">Skills</a>
+    <a href="../contact.html">Contact</a>
+  </div>
 </nav>
 
-<!-- ================= OVERVIEW ================= -->
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="breadcrumb-content">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <a href="../projects.html">Projects</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">Low-Cost Modular UAV</span>
+  </div>
+</div>
+
+<!-- Project Overview -->
 <section class="section">
-  <h2>Project Overview</h2>
+  <div class="container">
+    <h2 class="section-title">Project Overview</h2>
+    <p class="section-intro">
+      This project was developed to address a recurring challenge observed during UAV development within Team Arrow: meaningful testing was frequently delayed until final deadlines because full-scale UAV manufacturing was expensive, time-intensive, and early failures often resulted in crashes and rework.
+    </p>
 
-  <p>
-    This project was developed to address a recurring challenge observed during
-    UAV development within Team Arrow: meaningful testing was frequently delayed
-    until final deadlines because full-scale UAV manufacturing was expensive,
-    time-intensive, and early failures often resulted in crashes and rework.
-  </p>
+    <div class="callout callout-info">
+      <p><strong>Challenge:</strong> High-cost composite UAVs limited early testing opportunities, resulting in delayed validation and increased risk of late-stage failures.</p>
+      <p><strong>Solution:</strong> A low-cost, modular plywood platform enabling rapid experimentation before committing to expensive composite manufacturing.</p>
+    </div>
 
-  <!-- System-level image -->
-  <figure>
-    <img src="../assets/images/low-cost-uav/overall-platform.jpg"
-         alt="Low-cost modular UAV overall configuration">
-    <figcaption>
-      Overall configuration of the low-cost experimental UAV used as a rapid
-      testing platform prior to full-scale aircraft manufacturing.
-    </figcaption>
-  </figure>
+    <!-- System-level image -->
+    <figure class="project-image-container">
+      <img src="../assets/images/low-cost-uav/overall-platform.jpg"
+           alt="Low-cost modular UAV overall configuration">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        Overall configuration of the low-cost experimental UAV used as a rapid testing platform prior to full-scale aircraft manufacturing.
+      </figcaption>
+    </figure>
+  </div>
 </section>
 
-<!-- ================= DESIGN & CAD ================= -->
+<!-- Design & CAD -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Design & CAD Development</h2>
+    <p>
+      The airframe architecture was developed with a strong emphasis on manufacturability and modularity rather than minimum weight or peak aerodynamic efficiency.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3><span class="icon">🎯</span> Design Priorities</h3>
+        <p>
+          Manufacturability and rapid assembly took precedence over weight optimization, enabling frequent design iterations without specialized tooling.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🔧</span> Modular Architecture</h3>
+        <p>
+          Jigsaw-style interfaces allowed component swapping without adhesives, supporting quick repairs and configuration changes.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">⚡</span> Fast Iteration</h3>
+        <p>
+          Laser-cut plywood enabled same-day part production, dramatically reducing the design-test-learn cycle time.
+        </p>
+      </div>
+    </div>
+
+    <!-- CAD image -->
+    <figure class="project-image-container">
+      <img src="../assets/images/low-cost-uav/cad-structure.png"
+           alt="CAD model of modular UAV structure">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        CAD model showing the modular, jigsaw-style structural interfaces that enable rapid assembly, replacement, and reconfiguration.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Manufacturing -->
 <section class="section">
-  <h2>Design & CAD Development</h2>
+  <div class="container">
+    <h2 class="section-title">Manufacturing & Fabrication</h2>
+    
+    <p class="section-intro">
+      Structural components were manufactured using laser-cut plywood, enabling rapid turnaround, low cost, and repeatable fabrication without specialized tooling.
+    </p>
 
-  <p>
-    The airframe architecture was developed with a strong emphasis on
-    manufacturability and modularity rather than minimum weight or peak
-    aerodynamic efficiency.
-  </p>
+    <h3>Key Manufacturing Advantages:</h3>
+    <ul class="highlights">
+      <li>
+        <strong>Rapid Production</strong>
+        <p>Same-day turnaround from CAD to physical parts using laser cutting services.</p>
+      </li>
+      <li>
+        <strong>Cost Efficiency</strong>
+        <p>Material cost less than 10% of composite equivalent, enabling multiple prototypes.</p>
+      </li>
+      <li>
+        <strong>No Specialized Tools</strong>
+        <p>Eliminated need for molds, jigs, or curing equipment required for composite fabrication.</p>
+      </li>
+      <li>
+        <strong>Design Iteration</strong>
+        <p>Low cost enabled aggressive testing and rapid design improvements.</p>
+      </li>
+    </ul>
 
-  <!-- CAD image -->
-  <figure>
-    <img src="../assets/images/low-cost-uav/cad-structure.png"
-         alt="CAD model of modular UAV structure">
-    <figcaption>
-      CAD model showing the modular, jigsaw-style structural interfaces that
-      enable rapid assembly, replacement, and reconfiguration.
-    </figcaption>
-  </figure>
+    <!-- Fabrication image -->
+    <figure class="project-image-container">
+      <img src="../assets/images/low-cost-uav/laser-cut-parts.jpg"
+           alt="Laser-cut plywood UAV components">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        Laser-cut plywood components prior to assembly, demonstrating part-count reduction and manufacturing simplicity.
+      </figcaption>
+    </figure>
+  </div>
 </section>
 
-<!-- ================= MANUFACTURING ================= -->
+<!-- Assembly -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Assembly & Modularity</h2>
+    
+    <p class="section-intro">
+      A jigsaw-style modular assembly was used to allow fast assembly, easy repair, and quick configuration changes without adhesives or complex fixturing.
+    </p>
+
+    <div class="research-topics">
+      <div class="research-topic">
+        <h4>Tool-Free Assembly</h4>
+        <p>Components snap together without adhesives, enabling rapid disassembly for transport and storage.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Field Repairability</h4>
+        <p>Damaged sections can be replaced in minutes using spare parts, minimizing downtime.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Configuration Flexibility</h4>
+        <p>Modular design allows testing different wing positions, payloads, and subsystem arrangements.</p>
+      </div>
+    </div>
+
+    <!-- Assembly image -->
+    <figure class="project-image-container">
+      <img src="../assets/images/low-cost-uav/assembly.jpg"
+           alt="Jigsaw-style assembly of modular UAV">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        Modular jigsaw-style assembly enabling quick repairs and subsystem swaps during testing and iteration.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Testing -->
 <section class="section">
-  <h2>Manufacturing & Fabrication</h2>
+  <div class="container">
+    <h2 class="section-title">Testing & Validation</h2>
+    
+    <p class="section-intro">
+      The platform was used to validate flight behavior, control strategies, payload integration, and assembly logic before scaling designs to composite airframes.
+    </p>
 
-  <p>
-    Structural components were manufactured using laser-cut plywood, enabling
-    rapid turnaround, low cost, and repeatable fabrication without specialized
-    tooling.
-  </p>
+    <h3>Validation Objectives:</h3>
+    <ul class="highlights">
+      <li>
+        <strong>Flight Characteristics</strong>
+        <p>Validated stability, control response, and handling qualities early in development.</p>
+      </li>
+      <li>
+        <strong>Subsystem Integration</strong>
+        <p>Tested avionics, power systems, and payload mounting before final design freeze.</p>
+      </li>
+      <li>
+        <strong>Assembly Procedures</strong>
+        <p>Identified interference issues and optimized assembly sequences for competition deployment.</p>
+      </li>
+      <li>
+        <strong>Risk Reduction</strong>
+        <p>Eliminated costly surprises by catching integration issues in low-cost prototypes.</p>
+      </li>
+    </ul>
 
-  <!-- Fabrication image -->
-  <figure>
-    <img src="../assets/images/low-cost-uav/laser-cut-parts.jpg"
-         alt="Laser-cut plywood UAV components">
-    <figcaption>
-      Laser-cut plywood components prior to assembly, demonstrating part-count
-      reduction and manufacturing simplicity.
-    </figcaption>
-  </figure>
+    <!-- Testing image -->
+    <figure class="project-image-container">
+      <img src="../assets/images/low-cost-uav/flight-testing.jpg"
+           alt="Low-cost UAV flight testing">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        Flight testing of the low-cost UAV, allowing early validation of systems without risking high-cost composite platforms.
+      </figcaption>
+    </figure>
+  </div>
 </section>
 
-<!-- ================= ASSEMBLY ================= -->
+<!-- Engineering Insight -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Engineering Insight</h2>
+    
+    <div class="research-content">
+      <p>
+        This project demonstrated how manufacturing-aware design can accelerate learning and reduce system-level risk by enabling early and frequent testing. Rather than optimizing a single aircraft, the focus shifted to designing a development platform that supports iteration under real-world constraints.
+      </p>
+
+      <h3 style="margin-top: 2rem;">Key Learnings:</h3>
+      <div class="about-grid" style="margin-top: 2rem;">
+        <div class="about-card">
+          <h3><span class="icon">💡</span> Early Testing Matters</h3>
+          <p>
+            Catching design issues in $50 prototypes is far better than discovering them in $500 composite builds.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">🏭</span> Design for Process</h3>
+          <p>
+            Manufacturing method selection has greater impact on iteration speed than material optimization.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">🔄</span> Platform Thinking</h3>
+          <p>
+            Building test platforms that enable learning is more valuable than building perfect prototypes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back Navigation -->
 <section class="section">
-  <h2>Assembly & Modularity</h2>
-
-  <p>
-    A jigsaw-style modular assembly was used to allow fast assembly, easy repair,
-    and quick configuration changes without adhesives or complex fixturing.
-  </p>
-
-  <!-- Assembly image -->
-  <figure>
-    <img src="../assets/images/low-cost-uav/assembly.jpg"
-         alt="Jigsaw-style assembly of modular UAV">
-    <figcaption>
-      Modular jigsaw-style assembly enabling quick repairs and subsystem swaps
-      during testing and iteration.
-    </figcaption>
-  </figure>
+  <div class="container" style="text-align: center;">
+    <a class="button" href="../projects.html">← Back to Projects</a>
+  </div>
 </section>
 
-<!-- ================= TESTING ================= -->
-<section class="section">
-  <h2>Testing & Validation</h2>
-
-  <p>
-    The platform was used to validate flight behavior, control strategies,
-    payload integration, and assembly logic before scaling designs to composite
-    airframes.
-  </p>
-
-  <!-- Testing image -->
-  <figure>
-    <img src="../assets/images/low-cost-uav/flight-testing.jpg"
-         alt="Low-cost UAV flight testing">
-    <figcaption>
-      Flight testing of the low-cost UAV, allowing early validation of systems
-      without risking high-cost composite platforms.
-    </figcaption>
-  </figure>
-</section>
-
-<!-- ================= ENGINEERING INSIGHT ================= -->
-<section class="section">
-  <h2>Engineering Insight</h2>
-
-  <p>
-    This project demonstrated how manufacturing-aware design can accelerate
-    learning and reduce system-level risk by enabling early and frequent testing.
-    Rather than optimizing a single aircraft, the focus shifted to designing a
-    development platform that supports iteration under real-world constraints.
-  </p>
-</section>
-
-<!-- ================= BACK NAV ================= -->
-<section class="section section-light" style="text-align:center;">
-  <a class="button" href="../projects.html">← Back to Projects</a>
-</section>
-
-<!-- ================= FOOTER ================= -->
+<!-- Footer -->
 <footer>
-  <p>© 2025 Mantra Patel</p>
+  <div class="footer-content">
+    <p>&copy; 2025 Mantra Patel | Mechanical Engineering Portfolio</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../competitions.html">Competitions</a>
+      <a href="../research.html">Research</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
 </footer>
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navContent = document.getElementById('navContent');
+  const navOverlay = document.getElementById('navOverlay');
+  const body = document.body;
+
+  function toggleMenu() {
+    navContent.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    body.style.overflow = navContent.classList.contains('active') ? 'hidden' : '';
+    const isExpanded = navContent.classList.contains('active');
+    menuToggle.setAttribute('aria-expanded', isExpanded);
+  }
+
+  function closeMenu() {
+    navContent.classList.remove('active');
+    navOverlay.classList.remove('active');
+    body.style.overflow = '';
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  menuToggle.addEventListener('click', toggleMenu);
+  navOverlay.addEventListener('click', closeMenu);
+
+  const navLinks = navContent.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navContent.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth > 768) {
+        closeMenu();
+      }
+    }, 250);
+  });
+
+  menuToggle.setAttribute('aria-expanded', 'false');
+</script>
 
 </body>
 </html>

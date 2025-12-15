@@ -3,49 +3,420 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mission Chandra lunar lander design challenge - Finalist at ISRO-inspired space technology competition.">
   <title>Mission Chandra | Mantra Patel</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
+<!-- Header -->
 <header class="header">
-  <h1>MISSION CHANDRA</h1>
-  <p class="subtitle">
-    Lunar Lander Design & Fabrication Challenge
-  </p>
+  <div class="header-content">
+    <h1>MISSION CHANDRA</h1>
+    <p class="subtitle">Lunar Lander Design & Fabrication Challenge</p>
+  </div>
 </header>
 
+<!-- Navigation -->
 <nav class="navbar">
-  <a href="../index.html">Home</a>
-  <a href="../projects.html">Projects</a>
-  <a href="../competitions.html">Competitions</a>
-  <a href="../research.html">Research</a>
-  <a href="../skills.html">Skills</a>
-  <a href="../contact.html">Contact</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+    ☰
+  </button>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="nav-content" id="navContent">
+    <a href="../index.html">Home</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../competitions.html" class="active">Competitions</a>
+    <a href="../research.html">Research</a>
+    <a href="../skills.html">Skills</a>
+    <a href="../contact.html">Contact</a>
+  </div>
 </nav>
 
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="breadcrumb-content">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <a href="../competitions.html">Competitions</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">Mission Chandra</span>
+  </div>
+</div>
+
+<!-- Achievement Banner -->
 <section class="section">
-  <h2>Competition Overview</h2>
-  <p>
-    Mission Chandra focused on the design and fabrication of a lunar lander
-    prototype inspired by ISRO missions, emphasizing lightweight structures,
-    stability, and fabrication feasibility.
-  </p>
+  <div class="container">
+    <div class="callout callout-success">
+      <p style="font-size: 1.3rem;"><strong>🌙 Finalist Selection</strong></p>
+      <p style="margin-top: 1rem;">Mission Chandra - Lunar Lander Challenge</p>
+    </div>
+  </div>
 </section>
 
-<section class="section section-light">
-  <h2>My Contribution</h2>
-  <ul>
-    <li>Designed structural layout of the lander prototype</li>
-    <li>Led fabrication and assembly of the selected lander model</li>
-    <li>Focused on mass optimization and landing stability</li>
-  </ul>
+<!-- Competition Overview -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Competition Overview</h2>
+    <p class="section-intro">
+      Mission Chandra focused on the design and fabrication of a lunar lander prototype inspired by ISRO missions, emphasizing lightweight structures, stability, and fabrication feasibility. The competition challenged students to apply space-technology engineering principles to create functional landing systems.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">Finalist</div>
+        <div class="stat-label">Competition Status</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">ISRO</div>
+        <div class="stat-label">Mission Inspired</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Space</div>
+        <div class="stat-label">Technology Focus</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Prototype</div>
+        <div class="stat-label">Built & Tested</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer class="footer">
-  <p>© 2025 Mantra Patel</p>
+<!-- My Role -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">My Role & Contribution</h2>
+    <p class="section-intro">
+      I served as <strong>Structural Design & Fabrication Lead</strong>, responsible for the structural architecture, weight optimization, and complete fabrication of the lunar lander prototype. The role required balancing structural integrity with aggressive weight targets while ensuring landing stability.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3><span class="icon">📐</span> Structural Design</h3>
+        <p>
+          Designed complete structural layout optimizing for weight, stability, and shock absorption during landing.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🛠️</span> Fabrication Leadership</h3>
+        <p>
+          Led fabrication and assembly of the selected lander model from concept through physical prototype.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">⚖️</span> Mass Optimization</h3>
+        <p>
+          Focused on aggressive weight reduction while maintaining structural safety factors and landing stability.
+        </p>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 3rem;">Key Responsibilities:</h3>
+    <ul class="highlights">
+      <li>
+        <strong>Structural Layout Design</strong>
+        <p>Designed complete lander architecture including leg configuration, central structure, and payload mounting.</p>
+      </li>
+      <li>
+        <strong>Fabrication & Assembly</strong>
+        <p>Led hands-on fabrication, managed build sequence, and ensured quality control throughout manufacturing.</p>
+      </li>
+      <li>
+        <strong>Weight Optimization</strong>
+        <p>Implemented aggressive mass reduction strategies while maintaining required structural performance.</p>
+      </li>
+      <li>
+        <strong>Landing Stability Analysis</strong>
+        <p>Analyzed center of gravity, leg geometry, and stability on uneven terrain for reliable landing performance.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Technical Challenges -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Design Challenges & Solutions</h2>
+    
+    <div class="research-topics">
+      <div class="research-topic">
+        <h4>Weight Minimization</h4>
+        <p>Balanced aggressive weight targets with structural safety factors for landing impact scenarios.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Energy Absorption</h4>
+        <p>Developed shock absorption system to dissipate landing impact energy and protect payload.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Terrain Stability</h4>
+        <p>Designed leg geometry and footpad configuration for stability on uneven simulated lunar surface.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Material Selection</h4>
+        <p>Selected materials balancing weight, strength, and fabrication feasibility for prototype construction.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Center of Gravity</h4>
+        <p>Optimized mass distribution to ensure stable landing orientation and prevent tip-over.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Structural Integrity</h4>
+        <p>Ensured structural members could withstand landing loads while minimizing total system weight.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Engineering Approach -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Engineering Approach</h2>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 1</div>
+        <div class="timeline-content">
+          <h4>Concept Design</h4>
+          <p>Initial structural concepts exploring different leg configurations, landing mechanisms, and weight optimization strategies.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 2</div>
+        <div class="timeline-content">
+          <h4>Structural Analysis</h4>
+          <p>Load analysis, stability calculations, and material selection to validate design feasibility.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 3</div>
+        <div class="timeline-content">
+          <h4>Fabrication Planning</h4>
+          <p>Manufacturing method selection, tooling requirements, and assembly sequence optimization.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 4</div>
+        <div class="timeline-content">
+          <h4>Prototype Construction</h4>
+          <p>Hands-on fabrication, quality control, and assembly of complete working prototype.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 5</div>
+        <div class="timeline-content">
+          <h4>Testing & Validation</h4>
+          <p>Drop tests, stability verification, and performance validation against competition requirements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Technical Aspects -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Key Technical Aspects</h2>
+    
+    <div class="about-grid">
+      <div class="about-card">
+        <h3><span class="icon">🔩</span> Leg Design</h3>
+        <p>
+          Four-leg configuration with optimized geometry for stability, load distribution, and shock absorption.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">⚡</span> Impact Mitigation</h3>
+        <p>
+          Energy-absorbing elements integrated into leg structure to protect payload during landing.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">📏</span> Structural Analysis</h3>
+        <p>
+          Load path analysis and failure mode identification to ensure robust structural performance.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🎯</span> Mass Distribution</h3>
+        <p>
+          Strategic component placement to achieve low center of gravity and prevent tip-over scenarios.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">🏗️</span> Fabrication Method</h3>
+        <p>
+          Selected construction techniques balancing precision, strength, and manufacturing feasibility.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3><span class="icon">✅</span> Testing Protocol</h3>
+        <p>
+          Comprehensive testing regime validating structural integrity, stability, and landing performance.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results & Recognition -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Results & Achievement</h2>
+    
+    <div class="research-content">
+      <p style="font-size: 1.2rem; color: var(--text);">
+        The lander prototype was <strong style="color: var(--primary);">selected as a finalist</strong>, demonstrating successful integration of structural design principles, weight optimization, and fabrication excellence in a space-technology application.
+      </p>
+
+      <h3 style="margin-top: 3rem;">Achievement Highlights:</h3>
+      <ul class="highlights">
+        <li>
+          <strong>Working Prototype</strong>
+          <p>Successfully designed and fabricated complete functional lunar lander prototype.</p>
+        </li>
+        <li>
+          <strong>Finalist Selection</strong>
+          <p>Recognized among top designs demonstrating technical feasibility and design excellence.</p>
+        </li>
+        <li>
+          <strong>Structural Performance</strong>
+          <p>Prototype validated structural integrity and landing stability through testing protocol.</p>
+        </li>
+        <li>
+          <strong>Weight Optimization Success</strong>
+          <p>Achieved aggressive weight targets while maintaining required safety factors and performance.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Key Learnings -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Key Learnings</h2>
+    
+    <div class="research-topics">
+      <div class="research-topic">
+        <h4>Space Systems Engineering</h4>
+        <p>Gained experience in space-technology design constraints, including weight optimization and structural reliability.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Structural Design Under Constraints</h4>
+        <p>Developed skills in balancing competing requirements: weight, strength, stability, and manufacturability.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Hands-On Fabrication</h4>
+        <p>Strengthened practical manufacturing skills through complete prototype construction and assembly.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Testing & Validation</h4>
+        <p>Experience in developing test protocols and validating performance against design requirements.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Mass Optimization Techniques</h4>
+        <p>Applied systematic weight reduction strategies while maintaining structural integrity.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Landing Dynamics</h4>
+        <p>Understanding of impact scenarios, energy absorption, and stability requirements for landing systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back Navigation -->
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <a class="button" href="../competitions.html">← Back to Competitions</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Mantra Patel | Mechanical Engineering Portfolio</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../competitions.html">Competitions</a>
+      <a href="../research.html">Research</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
 </footer>
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navContent = document.getElementById('navContent');
+  const navOverlay = document.getElementById('navOverlay');
+  const body = document.body;
+
+  function toggleMenu() {
+    navContent.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    body.style.overflow = navContent.classList.contains('active') ? 'hidden' : '';
+    const isExpanded = navContent.classList.contains('active');
+    menuToggle.setAttribute('aria-expanded', isExpanded);
+  }
+
+  function closeMenu() {
+    navContent.classList.remove('active');
+    navOverlay.classList.remove('active');
+    body.style.overflow = '';
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  menuToggle.addEventListener('click', toggleMenu);
+  navOverlay.addEventListener('click', closeMenu);
+
+  const navLinks = navContent.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navContent.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth > 768) {
+        closeMenu();
+      }
+    }, 250);
+  });
+
+  menuToggle.setAttribute('aria-expanded', 'false');
+</script>
 
 </body>
 </html>

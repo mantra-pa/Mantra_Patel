@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OpenFOAM-based multiphysics modeling of radiofrequency ablation with PINNs acceleration by Mantra Patel.">
+  <title>OpenFOAM Multiphysics Modeling | Mantra Patel</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-content">
+    <h1>OpenFOAM-Based Multiphysics Modeling</h1>
+    <p class="subtitle">Radiofrequency Ablation | Thermal Damage Prediction | PINNs Acceleration</p>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+    ☰
+  </button>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="nav-content" id="navContent">
+    <a href="../index.html">Home</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../competitions.html">Competitions</a>
+    <a href="../research.html" class="active">Research</a>
+    <a href="../skills.html">Skills</a>
+    <a href="../contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="breadcrumb-content">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <a href="../research.html">Research</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">OpenFOAM RFA Modeling</span>
+  </div>
+</div>
+
+<!-- Project Overview -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Project Overview</h2>
+    
+    <div class="callout callout-info">
+      <p><strong>Research Focus:</strong> Computational modeling of tumor destruction during fast-heating radiofrequency ablation</p>
+      <p style="margin-top: 0.5rem;"><strong>Methods:</strong> OpenFOAM multiphysics framework with PINNs acceleration</p>
+    </div>
+
+    <figure class="project-image-container">
+      <img src="../images/openfoam/overview.jpg"
+           alt="Radiofrequency ablation simulation domain">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        Radiofrequency ablation simulation domain showing computational framework for thermal therapy modeling.
+      </figcaption>
+    </figure>
+
+    <p class="section-intro">
+      This project focused on developing a <strong>multiphysics computational framework</strong> using <strong>OpenFOAM</strong> to model tumor destruction during <strong>fast-heating radiofrequency ablation (RFA)</strong>. The objective was to predict temperature evolution, tissue damage, and treatment effectiveness while maintaining physical consistency and numerical stability.
+    </p>
+  </div>
+</section>
+
+<!-- Motivation -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Motivation & Context</h2>
+    
+    <div class="research-content">
+      <p>
+        Minimally invasive thermal therapies such as RFA are increasingly used for early-stage breast tumors due to reduced morbidity and faster recovery. Accurate prediction of temperature fields and tissue necrosis is critical for safe and effective treatment. Computational modeling enables parameter optimization and treatment planning without invasive experimentation.
+      </p>
+
+      <div class="about-grid" style="margin-top: 3rem;">
+        <div class="about-card">
+          <h3><span class="icon">🏥</span> Clinical Motivation</h3>
+          <p>
+            Minimally invasive thermal ablation offers faster recovery and reduced complications compared to traditional surgery.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">🎯</span> Treatment Planning</h3>
+          <p>
+            Computational models enable patient-specific optimization and prediction of treatment outcomes before procedures.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">⚠️</span> Safety Considerations</h3>
+          <p>
+            Accurate thermal damage prediction prevents collateral damage to healthy tissue surrounding tumor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Multiphysics Framework -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Multiphysics Framework</h2>
+    
+    <figure class="project-image-container">
+      <img src="../images/openfoam/multiphysics-coupling.jpg"
+           alt="Coupled multiphysics framework">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        Coupled multiphysics framework showing interaction between blood flow, heat transfer, tumor growth, and tissue damage.
+      </figcaption>
+    </figure>
+
+    <p class="section-intro">
+      The model couples four interacting physical processes operating across different spatial and temporal scales:
+    </p>
+
+    <div class="research-topics">
+      <div class="research-topic">
+        <h4>Blood Flow (Darcy-Brinkman)</h4>
+        <p>Porous media flow through tumor tissue with permeability-dependent velocity fields affecting heat transfer.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Tumor Growth (Fisher Equation)</h4>
+        <p>Spatiotemporal tumor cell proliferation dynamics influencing treatment planning and ablation extent.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Heat Transfer (Pennes Bioheat)</h4>
+        <p>Bioheat equation with blood perfusion effects capturing convective cooling and metabolic heat generation.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Tissue Damage (Arrhenius Model)</h4>
+        <p>Temperature-history dependent damage accumulation predicting extent of irreversible tissue necrosis.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-success" style="margin-top: 3rem;">
+      <p><strong>Coupling Strategy:</strong> Temperature-dependent material properties and nonlinear coupling between solvers were incorporated to capture realistic ablation behavior across multiple physics domains.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OpenFOAM Implementation -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">OpenFOAM Implementation</h2>
+    
+    <figure class="project-image-container">
+      <img src="../images/openfoam/temperature-contours.jpg"
+           alt="Temperature contours during RFA">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        Temperature contours during radiofrequency ablation showing thermal field evolution and damage zone prediction.
+      </figcaption>
+    </figure>
+
+    <p class="section-intro">
+      Custom OpenFOAM solvers were developed to integrate porous-media flow, bioheat transfer, tumor growth, and thermal damage within a unified framework. Mesh refinement studies, timestep sensitivity analysis, and solver relaxation were used to ensure numerical stability and convergence.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 1</div>
+        <div class="timeline-content">
+          <h4>Solver Development</h4>
+          <p>Custom OpenFOAM solvers implementing coupled governing equations with appropriate boundary conditions.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 2</div>
+        <div class="timeline-content">
+          <h4>Mesh Refinement Studies</h4>
+          <p>Systematic mesh independence studies ensuring solution accuracy while managing computational cost.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 3</div>
+        <div class="timeline-content">
+          <h4>Numerical Stability</h4>
+          <p>Timestep sensitivity analysis and under-relaxation factors optimized for convergence stability.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Phase 4</div>
+        <div class="timeline-content">
+          <h4>Validation</h4>
+          <p>Model validation against analytical solutions and experimental data from literature.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Computational Challenges -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Computational Challenges</h2>
+    
+    <div class="research-content">
+      <p style="font-size: 1.1rem; color: var(--text);">
+        Fully coupled 3D simulations were computationally expensive due to nonlinear interdependence between governing equations and large domain sizes. These challenges limited the feasibility of rapid parametric studies and real-time optimization using traditional CFD alone.
+      </p>
+
+      <div class="about-grid" style="margin-top: 3rem;">
+        <div class="about-card">
+          <h3><span class="icon">⏱️</span> Computational Cost</h3>
+          <p>
+            Full 3D multiphysics simulations require hours to days per case, limiting parametric exploration.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">🔄</span> Nonlinear Coupling</h3>
+          <p>
+            Strong interdependence between physics domains requires careful iteration and under-relaxation.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">📊</span> Domain Size</h3>
+          <p>
+            Large computational domains needed to capture far-field effects increase mesh size and simulation time.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">🎯</span> Convergence Issues</h3>
+          <p>
+            Temperature-dependent properties and damage accumulation create convergence challenges.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">⚖️</span> Timestep Restrictions</h3>
+          <p>
+            Explicit damage integration and thermal diffusion impose small timestep requirements.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">🔬</span> Parametric Studies</h3>
+          <p>
+            Treatment optimization requires many simulation runs, making traditional CFD impractical.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PINNs Acceleration -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Physics-Informed Neural Networks (PINNs)</h2>
+    
+    <figure class="project-image-container">
+      <img src="../images/openfoam/pinn-workflow.jpg"
+           alt="PINNs-assisted prediction workflow">
+      <figcaption style="text-align: center; color: var(--text-light); margin-top: 1rem;">
+        PINNs-assisted prediction workflow showing integration with OpenFOAM for accelerated parametric studies.
+      </figcaption>
+    </figure>
+
+    <div class="callout callout-success">
+      <p><strong>Hybrid Approach:</strong> Physics-Informed Neural Networks complement OpenFOAM by providing rapid surrogate predictions while maintaining physical constraints through governing equations embedded in loss functions.</p>
+    </div>
+
+    <p class="section-intro" style="margin-top: 2rem;">
+      To address computational limitations, <strong>Physics-Informed Neural Networks (PINNs)</strong> were explored as a complementary approach. PINNs embed governing equations directly into the loss function, enabling rapid prediction of temperature and damage fields while preserving physical constraints.
+    </p>
+
+    <div class="research-topics" style="margin-top: 3rem;">
+      <div class="research-topic">
+        <h4>Physics Enforcement</h4>
+        <p>Governing equations embedded in loss function ensure predictions satisfy physical laws without training data.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Rapid Prediction</h4>
+        <p>Once trained, PINNs provide near-instantaneous predictions enabling real-time parametric exploration.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Benchmark Validation</h4>
+        <p>Validated on lid-driven cavity flow showing excellent agreement with OpenFOAM reference solutions.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Surrogate Modeling</h4>
+        <p>Trained surrogate models interpolate between OpenFOAM solutions for parameter ranges of interest.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Mesh-Free Approach</h4>
+        <p>Neural networks operate directly on governing equations without requiring structured grids.</p>
+      </div>
+
+      <div class="research-topic">
+        <h4>Gradient Information</h4>
+        <p>Automatic differentiation provides exact derivatives for flux calculations and sensitivity analysis.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-info" style="margin-top: 3rem;">
+      <p><strong>Validation Results:</strong> Close agreement between PINN predictions and OpenFOAM solutions demonstrated on benchmark CFD problems (lid-driven cavity flow), confirming methodology for complex multiphysics applications.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Engineering Insight -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Engineering Insight</h2>
+    
+    <div class="research-content">
+      <p style="font-size: 1.1rem; color: var(--text);">
+        This work demonstrated how <strong>data-driven models can complement high-fidelity CFD</strong> rather than replace it. By combining OpenFOAM and PINNs, the framework enables faster parametric evaluation while maintaining physical accuracy—an approach applicable to thermal manufacturing processes, energy systems, and biomedical engineering.
+      </p>
+
+      <div class="about-grid" style="margin-top: 3rem;">
+        <div class="about-card">
+          <h3><span class="icon">🔗</span> Complementary Tools</h3>
+          <p>
+            Data-driven methods augment rather than replace physics-based simulation, combining strengths of both approaches.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">⚡</span> Computational Efficiency</h3>
+          <p>
+            Order-of-magnitude speedup for parametric studies enables practical optimization and real-time decision support.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><span class="icon">🎯</span> Physical Consistency</h3>
+          <p>
+            Physics-informed constraints ensure predictions remain valid across parameter space without extensive training data.
+          </p>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 3rem;">Broader Applications:</h3>
+      <ul class="highlights">
+        <li>
+          <strong>Thermal Manufacturing Processes</strong>
+          <p>Heat treatment optimization, welding process control, additive manufacturing thermal management.</p>
+        </li>
+        <li>
+          <strong>Energy Systems</strong>
+          <p>Heat exchanger design, thermal storage optimization, power cycle performance prediction.</p>
+        </li>
+        <li>
+          <strong>Biomedical Engineering</strong>
+          <p>Treatment planning, medical device optimization, patient-specific therapy protocols.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Outcome & Relevance -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Outcome & Impact</h2>
+    
+    <div class="research-content">
+      <p style="font-size: 1.1rem; color: var(--text);">
+        The combined OpenFOAM–PINN framework significantly reduced computational time while preserving predictive capability. The project strengthened my understanding of multiphysics modeling, numerical stability, and the role of computational tools in real-world engineering decision-making.
+      </p>
+
+      <div class="stats-grid" style="margin-top: 3rem;">
+        <div class="stat-card">
+          <div class="stat-number1">4</div>
+          <div class="stat-label">Physics Domains Coupled</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number1">OpenFOAM</div>
+          <div class="stat-label">Custom Solvers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number1">PINNs</div>
+          <div class="stat-label">Surrogate Models</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 3rem;">Key Takeaways:</h3>
+      <div class="research-topics" style="margin-top: 2rem;">
+        <div class="research-topic">
+          <h4>Multiphysics Modeling</h4>
+          <p>Deep understanding of coupled physics domains and numerical strategies for stable convergence.</p>
+        </div>
+
+        <div class="research-topic">
+          <h4>Computational Methods</h4>
+          <p>Practical experience with OpenFOAM solver development, mesh generation, and validation procedures.</p>
+        </div>
+
+        <div class="research-topic">
+          <h4>Hybrid Approaches</h4>
+          <p>Integration of traditional CFD with machine learning for enhanced computational efficiency.</p>
+        </div>
+
+        <div class="research-topic">
+          <h4>Engineering Applications</h4>
+          <p>Translation of computational results into actionable engineering insights and design recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back Navigation -->
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <a class="button" href="../research.html">← Back to Research</a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Mantra Patel | Mechanical Engineering Portfolio</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../competitions.html">Competitions</a>
+      <a href="../research.html">Research</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navContent = document.getElementById('navContent');
+  const navOverlay = document.getElementById('navOverlay');
+  const body = document.body;
+
+  function toggleMenu() {
+    navContent.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    body.style.overflow = navContent.classList.contains('active') ? 'hidden' : '';
+    const isExpanded = navContent.classList.contains('active');
+    menuToggle.setAttribute('aria-expanded', isExpanded);
+  }
+
+  function closeMenu() {
+    navContent.classList.remove('active');
+    navOverlay.classList.remove('active');
+    body.style.overflow = '';
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  menuToggle.addEventListener('click', toggleMenu);
+  navOverlay.addEventListener('click', closeMenu);
+
+  const navLinks = navContent.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navContent.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth > 768) {
+        closeMenu();
+      }
+    }, 250);
+  });
+
+  menuToggle.setAttribute('aria-expanded', 'false');
+</script>
+
+</body>
+</html>
